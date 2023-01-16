@@ -15,6 +15,8 @@ import SlidingDoor from './pages/aluminum/aluminum_materials/sliding-door/slidin
 import Storefront from './pages/aluminum/aluminum_materials/store-front/storefront';
 import SwingDoor from './pages/aluminum/aluminum_materials/swing-door/swingdoor';
 import SwingScreenDoor from './pages/aluminum/aluminum_materials/swing-screen-door/swingscreendoor';
+import Customer from './pages/quote/customer';
+import Receipt from './pages/quote/receipt';
 import { CartProvider } from 'react-use-cart';
 
 function App() {
@@ -39,6 +41,8 @@ function App() {
         <Route path="/swingdoor" element={<SwingDoor />} />
         <Route path="/swingscreendoor" element={<SwingScreenDoor />} />
         <Route path="/Quote" element={<Quote />} />
+        <Route path="/customer-form" element={<Customer/>}/>
+        <Route path="/receipt" element={<Receipt/>} />
       </Routes>
     </CartProvider>
     </BrowserRouter>

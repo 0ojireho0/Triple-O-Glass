@@ -168,11 +168,11 @@ const GlassItemcard = (props) =>{
                                                     <form className='customForm' onSubmit={handleSubmit}>
                                                         <label>
                                                         Width (in ft):
-                                                        <input type="number" value={inputWidth} onChange={event => setInputWidth(event.target.value)} name="width" />
+                                                        <input type="number" className='input' value={inputWidth} onChange={event => setInputWidth(event.target.value)} name="width" />
                                                         </label>
                                                         <label>
                                                          Length (in ft):
-                                                        <input type="number" value={inputLength} onChange={event => setInputLength(event.target.value)}name="length" />
+                                                        <input type="number" className='input' value={inputLength} onChange={event => setInputLength(event.target.value)}name="length" />
                                                         </label>
                                                         <button className="submit_btn" type="submit" onClick={handleSubmit}>Submit</button>
                                                     </form>
